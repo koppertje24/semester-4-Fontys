@@ -1,0 +1,19 @@
+auteurs:
+- Serena frijters
+ - datajournalist volkskrant
+ - schrijft: News in cijfers
+ - maakt datavisualisaties
+
+- Wilma de rek
+ - chef boeken volkskrant
+ - publiceerde non-fictietitals (Van big bang tot burn-out)
+
+boeken
+- kinderboeken gaan goed
+- kook/non-fiction is slecht 
+
+bronnen:
+CPNB
+smb
+GFK
+KVB boekwerk

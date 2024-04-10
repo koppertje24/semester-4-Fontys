@@ -1,0 +1,22 @@
+DATA: https://www.rijdendetreinen.nl/en/open-data/disruptions
+is there a pathern of disruptions in the trein trafic within the NS? 
+	what is a pathern?
+	what does the NS mean with a disruption?
+	what is included/exclude in train trafic? 
+	who is the NS? 
+
+
+Why must we do it?
+	so, we can mitagate or prevent more train disruptions.
+
+What is it exactly what we are going to do?
+	We are going to look for connections between the disruptions and the weather and time of year.
+
+Who is going to what?
+	In my personal project i will do most of the work.
+
+When are we going to do it?
+	as soon as posable I hope. 
+
+How are we going to do it (means, resources, finances)?
+	first look for datasets that can be overlapped to see the corelation between the sets, then we overlay them to see if the weather has a play in it. then we add the time of year to see if that adds a diference.
