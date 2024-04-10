@@ -7509,7 +7509,7 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4f45d24e">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4f45d24e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7524,6 +7524,26 @@ a.anchor-link {
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'GRAIN---Land-grab-deals---Jan-2012.xlsx'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>C:\Users\super\AppData\Local\Temp\ipykernel_18300\2292515184.py:1: DeprecationWarning: 
+Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+but was not found to be installed on your system.
+If this would cause problems for you,
+please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+        
+  import pandas as pd
+</pre>
 </div>
 </div>
 </div>
@@ -8039,6 +8059,19 @@ Name: Sector, dtype: object</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cb3d980b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p>alles hierboven is van het original document <p>hieronder verander ik de code zodat het in een copie van de original data frame.</p>
+</p></blockquote>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a70d1efd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8332,6 +8365,19 @@ Name: count, dtype: int64</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a3477922">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p>hieronder zorg ik ervoor dat ik de text aanpas zodat het meeste van de informatie in getallen word neergezet. <p>het is me niet voledig gelukt om alles in getallen te krijgen. <p>dit houd ook in dat ik kijk naar een minimaal investering en een maximaale investiring.</p>
+</p></p></blockquote>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=32a29a51">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8342,8 +8388,6 @@ Name: count, dtype: int64</pre>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># try to 'fix' US$77 million in the Projected investment column</span>
 <span class="c1"># to be continued...</span>
-
-
 <span class="n">million_mask</span> <span class="o">=</span> <span class="n">df_repaired</span><span class="p">[</span><span class="s1">'Projected investment'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'million'</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 <span class="n">df_repaired</span><span class="p">[</span><span class="s1">'Projected investment'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_repaired</span><span class="p">[</span><span class="s1">'Projected investment'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">({</span><span class="s1">'US\$'</span><span class="p">:</span> <span class="s1">''</span><span class="p">,</span> <span class="s1">' million'</span> <span class="p">:</span> <span class="s1">''</span><span class="p">},</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -8596,17 +8640,37 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a6b35969">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=51014310">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="opdrachten-van-canvas">opdrachten van canvas<a class="anchor-link" href="#opdrachten-van-canvas">¶</a></h1><ul>
+<li>what 'rules' or convention did you deduct from the data?</li>
+</ul>
+<blockquote>
+<p>dat er nog veel opgeruimd moet worden</p>
+</blockquote>
+<ul>
+<li>How do you find exceptions/violations to this rule?</li>
+</ul>
+<blockquote>
+<p>door het doorzoeken van de data en kijken wat er well makelijke uit kan zien.</p>
+</blockquote>
+<ul>
+<li>What actions do you take to clean the data (fix the violations)?</li>
+</ul>
+<blockquote>
+<p>ik denk dat wat je vraagt gaat over hoe ik het heb gedaan en dat is simpel. heb voornamelijk de opdracht gevolged en gekekken of er een manier was om het duidelijker the krijgen.</p>
+</blockquote>
+<ul>
+<li>Explain if there are consequences to this cleaning action (and explain).</li>
+</ul>
+<blockquote>
+<p>het zorgt ervoor dat je meer collomen zal krijgen en dat kan makelijk moeilijk leesbaar worden. dit moet dus goed in de gaten gehouden worden.</p>
+</blockquote>
 </div>
 </div>
 </div>
