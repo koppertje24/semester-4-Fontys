@@ -1,9 +1,9 @@
 vermelden voor een goede proposal opdracht, van het bedrijf. 
 controleer de proposal opdracht voor het opgeven.
 
-schrijf de reden van waarom de goed.
+schrijf de reden van waarom de datasets goed zijn.
 
-is er mis mech tussen de:
+is er mis mech tussen de datasets:
     bewijzen waarom het zo goed is.
 
 xbar chart. op dagen, maanden en niet de volledige data.
